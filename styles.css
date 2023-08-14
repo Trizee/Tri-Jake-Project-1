@@ -5,6 +5,8 @@
     padding: 0;
     margin: 0;
     font-family: 'Bebas Neue', sans-serif;
+    scrollbar-color: #000;
+    scrollbar-width: 5px;
 }
 
 header {
@@ -75,13 +77,13 @@ li a:hover {
   }
 
   .featured {
-    width: 43vw;
+    width: 45vw;
     padding-top: 25px;
     font-size: 1.5rem;
   }
 
   .featured img {
-    width: 500px;
+    width: 550px;
     border-radius: 10px;
     height: 275px;
     border: .5px solid #000;
@@ -98,7 +100,7 @@ li a:hover {
   }
 
   #comment {
-    width: 42vw;
+    width: 40vw;
     padding-top: 25px;
     font-size: 1.5rem;
     background-color: #000;
@@ -107,4 +109,34 @@ li a:hover {
     margin: auto;
     padding: auto;
     height: 300px;
+  }
+
+  .review-form {
+    width: 30vw;
+    padding-top: 25px;
+    font-size: 1.5rem;
+    margin: auto;
+    padding: auto;
+    height: 300px;
+  }
+
+  .under-featured {
+    display: flex;
+    justify-content: space-between;
+    width: 85vw;
+    align-content: center;
+    padding: auto;
+    margin: auto;
+    height: 400px;
+  }
+
+  .review-container {
+    width: 55vw;
+    font-size: 1.75rem;
+    height: 300px;
+    background-color: #d23433;
+    color: #fff;
+    -webkit-text-stroke: .5px #000;
+    border-radius: 10px;
+    margin: auto;
   }
