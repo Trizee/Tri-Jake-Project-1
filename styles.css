@@ -121,9 +121,8 @@ li a:hover {
     margin: auto;
     padding: auto;
     height: 300px;
-    border: 1px solid #000;
     border-radius: 10px;
-    background-color: #8b8b8b;
+    background-color:  #1175A8;
   }
 
   .under-featured {
@@ -140,13 +139,36 @@ li a:hover {
     width: 55vw;
     font-size: 1.75rem;
     height: 300px;
-    background-color: #d23433;
-    color: #fff;
-    -webkit-text-stroke: .5px #000;
+    border: 1px solid #000;
     border-radius: 10px;
     margin: auto;
   }
 
   h1 {
     padding: 25px;
+  }
+
+  input{
+    width: 90%;
+    border-radius: 10px;
+    font-size: 30px;
+  }
+
+  select {
+    border-radius: 10px;
+    width: 40%;
+  }
+
+  #name-input{
+    height: 15%;
+  }
+
+  #review-input {
+    height: 45%;
+    padding: 0 5%;
+  }
+
+  #review-submit {
+    width: 40%;
+    font-size: 1rem;
   }

@@ -50,7 +50,7 @@
     </main>
     <div class="under-featured">
         <div class="review-container">
-            <h2>REVIEWS</h2>
+            <h2><u>REVIEWS</u></h2>
                 <div class="individual-review">
                     <h4>John Doe     ★★★☆☆</h4>
                     <p>This is an example review and rating this place sucks bad hahah</p>
@@ -61,8 +61,10 @@
                 </div>
         </div>
         <form class="review-form">
-            <input type="text" placeholder="Enter Name Here" required><br>
-            <input type="text" placeholder="Please give a review!" required><br>
+            <label>Name :</label>
+            <input id='name-input' type="text" required><br>
+            <label>Review</label>
+            <input id="review-input" type="text" required><br>
             <select>
                 <option>★★★★★</option>
                 <option>★★★★</option>
@@ -70,7 +72,7 @@
                 <option>★★</option>
                 <option>★</option>
             </select>
-            <input type="submit">
+            <input id="review-submit" type="submit">
         </form>
     </div>
     <!-- make a form with a submit button -->
