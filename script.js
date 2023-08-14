@@ -6,6 +6,7 @@ fetch('http://localhost:3000/bars')
     data.forEach(renderNav)
 })
 
+
 function renderNav(data){
 
     const barNav = document.querySelector('.bar-nav')
@@ -24,9 +25,13 @@ function renderNav(data){
     barNav.appendChild(navDiv)
 
     navDiv.addEventListener('mouseover',()=>{
-        hiddenRating.style.display = 'block'
+        navRating.style.display = 'block'
+    })
+    navDiv.addEventListener('mouseleave',()=>{
+        navRating.style.display = 'none'
     })
 }
+// transition: all 0.3s ease 0s;
 
 function fillFeatured(data){
     const featName = document.querySelector('#fname')
@@ -40,6 +45,21 @@ function fillFeatured(data){
     featDes.textContent = data.des
 }
 // create an array filter to sort restaurnts
+// making a function for the bar to be hidden
+
+const barNav = document.querySelector('.bar-nav')
+const barBtn = document.querySelector('#barBtn')
+    barNav.style.display = 'none'
+    barBtn.addEventListener('click',()=>{
+        if(barNav.style.display == 'flex'){
+           barNav.style.display = 'none'
+    
+
+        } else if (barNav.style.display == 'none'){
+            barNav.style.display = 'flex'
+           
+        }
+    })
 
 // create dubmit function to add restaurants
 
