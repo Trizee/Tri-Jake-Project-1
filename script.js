@@ -4,6 +4,7 @@ fetch('http://localhost:3000/bars')
 .then(r=> r.json())
 .then(data => {
     data.forEach(renderNav)
+    fillFeatured(data[Math.floor(Math.random() * data.length)])
 })
 
 
@@ -30,19 +31,25 @@ function renderNav(data){
     navDiv.addEventListener('mouseleave',()=>{
         navRating.style.display = 'none'
     })
+
+    navDiv.addEventListener('click',()=>{
+        fillFeatured(data)
+    })
 }
 // transition: all 0.3s ease 0s;
 
 function fillFeatured(data){
     const featName = document.querySelector('#fname')
     const featImg = document.querySelector('#fimg')
-    const featDes = document.querySelector('fdes')
+    const featDes = document.querySelector('#fdes')
     const featLoc = document.querySelector('#floc')
     const featRate = document.querySelector('#frate')
 
     featName.textContent = data.name
     featImg.src = data.image
-    featDes.textContent = data.des
+    featDes.textContent = data.description
+    featLoc.textContent = data.location
+    featRate.textContent = data.rating
 }
 // create an array filter to sort restaurnts
 // making a function for the bar to be hidden

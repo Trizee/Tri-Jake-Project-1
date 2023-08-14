@@ -48,12 +48,12 @@ li a:hover {
 }
 
 .bar-nav {
-    display: flex;
+    display: none;
     justify-content: center;
     overflow: auto;
     width: 100%;
     padding: 10px;
-    
+    transition: 300ms;
   }
 
   .bar-nav img {
@@ -72,11 +72,10 @@ li a:hover {
 
   .hidden-rating {
     display: none;
-    padding: auto;
   }
 
   .featured {
-    width: 42vw;
+    width: 43vw;
     padding-top: 25px;
     font-size: 1.5rem;
   }
@@ -85,6 +84,7 @@ li a:hover {
     width: 500px;
     border-radius: 10px;
     height: 275px;
+    border: .5px solid #000;
   }
 
   main {
@@ -106,8 +106,5 @@ li a:hover {
     border-radius: 10px;
     margin: auto;
     padding: auto;
+    height: 300px;
   }
-
-.transition {
-    transition: all .3s linear;
-}
