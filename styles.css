@@ -118,7 +118,7 @@ li a:hover {
   .review-form {
     width: 28vw;
     font-size: 1.5rem;
-    margin: auto;
+    margin: 0;
     padding: auto;
     height: 300px;
     border-radius: 10px;
@@ -141,7 +141,8 @@ li a:hover {
     height: 300px;
     border: 1px solid #000;
     border-radius: 10px;
-    margin: auto;
+    margin: 0;
+    overflow: auto;
   }
 
   h1 {
@@ -159,16 +160,17 @@ li a:hover {
     width: 40%;
   }
 
-  #name-input{
-    height: 15%;
-  }
-
-  #review-input {
+  #comment-input {
     height: 45%;
-    padding: 0 5%;
+    padding: 10%;
   }
 
   #review-submit {
     width: 40%;
     font-size: 1rem;
+  }
+
+  .comsHeader {
+    padding: auto;
+    margin-bottom: -30px;
   }
