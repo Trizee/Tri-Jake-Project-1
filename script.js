@@ -88,7 +88,7 @@ const barBtn = document.querySelector('#barBtn')
     barBtn.addEventListener('click',()=>{
         if(barNav.style.display == 'flex'){
            barNav.style.display = 'none'
-    
+            
 
         } else if (barNav.style.display == 'none'){
             barNav.style.display = 'flex'
@@ -149,6 +149,42 @@ function addComment(currentData){
 
 
 // create dubmit function to add restaurants
+const findForm = document.querySelector("#submit-form")
+findForm.addEventListener("submit", (e) => {
+    e.preventDefault()  
+    postRest()
+
+
+
+})
+
+function postRest(){
+
+    const newName = document.querySelector("#new-bar-name")
+    const newLocation = document.querySelector("#new-location")
+    const newImage = document.querySelector("#new-image")
+    const newDescription = document.querySelector("#new-comments")
+
+    fetch("http://localhost:3000/bars", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+        },
+        body: JSON.stringify({
+
+            name: newName.value,
+            image: newImage.value,
+            location : newLocation.value,
+            description : newDescription.value,
+            rating : [""],
+            comment : [""],
+        }),
+    })
+
+        .then(r => r.json())
+        .then(newData => console.log(newData))
+}
 
 // create function to take the average star rating 
 // create a patch to update json
