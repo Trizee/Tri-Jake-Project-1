@@ -78,8 +78,8 @@ const comSubmit = document.querySelector('.review-form')
 comSubmit.addEventListener('submit',(e)=>{
     e.preventDefault()
     addComment(currentData)
-    fillFeatured(currentData)
     showComments(currentData.comment[currentData.comment.length - 1])
+    featRate.textContent = Math.round(average(currentData.rating)*10) /10
 })
 
 const barNav = document.querySelector('.bar-nav')
