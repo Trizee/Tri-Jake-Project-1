@@ -7,6 +7,7 @@ fetch('http://localhost:3000/bars')
     fillFeatured(data[Math.floor(Math.random() * data.length)])
 })
 
+const average = array => array.reduce((a, b) => a + b) / array.length;
 
 function renderNav(data){
 
@@ -21,20 +22,21 @@ function renderNav(data){
 
     navImg.src = data.image
     navName.textContent = data.name 
-    navRating.textContent = `Rating: ${data.rating}`
+    
 
     navDiv.append(navImg,navName,navRating)
     barNav.appendChild(navDiv)
 
     navDiv.addEventListener('mouseover',()=>{
         navRating.style.display = 'block'
+        navRating.textContent = `Rating: ${Math.round(average(data.rating)*10) /10}`
     })
     navDiv.addEventListener('mouseleave',()=>{
         navRating.style.display = 'none'
     })
 
     navDiv.addEventListener('click',()=>{
-    
+        
         removeAllChildNodes(comContainer)
         fillFeatured(data)
     })
@@ -43,6 +45,7 @@ function renderNav(data){
 }
 // transition: all 0.3s ease 0s;
 
+const featRate = document.querySelector('#frate')
 function fillFeatured(data){
 
     currentData = data
@@ -56,13 +59,28 @@ function fillFeatured(data){
     featImg.src = data.image
     featDes.textContent = data.description
     featLoc.textContent = data.location
-    featRate.textContent = data.rating
+    featRate.textContent = Math.round(average(data.rating)*10) /10
+
+    // currentData.comment.reduce((a, b) => a + b) / currentData.length
+    // average function
+    // const average = array => array.reduce((a, b) => a + b) / array.length;
+    
 
     currentData.comment.forEach(showComments)
+    console.log(average(currentData.rating))
     // addind review function
 }
 // create an array filter to sort restaurnts
 // making a function for the bar to be hidden
+
+// making a submit feature
+const comSubmit = document.querySelector('.review-form')
+comSubmit.addEventListener('submit',(e)=>{
+    e.preventDefault()
+    addComment(currentData)
+    fillFeatured(currentData)
+    showComments(currentData.comment[currentData.comment.length - 1])
+})
 
 const barNav = document.querySelector('.bar-nav')
 const barBtn = document.querySelector('#barBtn')
@@ -100,6 +118,7 @@ function showComments(data){
     comContainer.appendChild(comDiv)
     comDiv.appendChild(newCom)
     
+    
 }
 
 // patch data
@@ -116,10 +135,19 @@ function patch(data){
     .then(data =>console.log(data))
 }
 
-// function addComment(currentData){
-//     const newComBody = document.querySelector('#comment-input')
-//     new
-// }
+function addComment(currentData){
+
+    const newComBody = document.querySelector('#comment-input')
+    currentData.comment.push(newComBody.value)
+    const starInput = document.querySelector('#star-input')
+    currentData.rating.push(parseInt(starInput.value))
+    
+    console.log(currentData)
+
+
+}
+
+
 // create dubmit function to add restaurants
 
 // create function to take the average star rating 
