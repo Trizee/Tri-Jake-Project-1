@@ -19,6 +19,7 @@ header {
 
 body{
     text-align: center;
+    margin-bottom: 200px;
 }
 
 h1 {
@@ -157,7 +158,8 @@ li a:hover {
 
   select {
     border-radius: 10px;
-    width: 40%;
+    width: 90%;
+    height: 10%;
   }
 
   #comment-input {
@@ -174,3 +176,31 @@ li a:hover {
     padding: auto;
     margin-bottom: -30px;
   }
+
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 85vw;
+    align-content: center;
+    margin: auto;
+    padding: auto;
+  }
+
+  #submit-form {
+    height: 600;
+    width: 45vw;
+    background-color: #000;
+    color: #fff;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 25px;
+  }
+
+  .fill-text {
+    width: 39vw;
+    height: 50%;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+  }
+

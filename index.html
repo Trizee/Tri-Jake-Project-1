@@ -7,6 +7,7 @@
     <script defer src="script.js"></script>
     <title>Bar Reviews</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -14,14 +15,15 @@
             <!-- Make a nav bar and line it up -->
             <ul>
                 <li id="barBtn"><a href="#">BARS</a></li>
-                <li><a href="#">COMMENTS</a></li>
-                <li><a href="#">ABOUT</a></li>
+                <li><a href="#comsHeader">COMMENTS</a></li>
+                <li><a href="#submit-form">ABOUT</a></li>
             </ul>
         </nav>
     </header>
     <nav class="bar-nav">
         <!-- fill with data from json -->
     </nav>
+    <div class="grid-container">
     <h1 id="fname">Restaurant : Example name</h1>
     <main>
         <!-- make containers for the restaurants -->
@@ -66,21 +68,38 @@
         </form>
     </div>
     <!-- make a form with a submit button -->
-    <form id="submit-form">
-        <lable>Name</lable>
-        <input id="new-bar-name" type="text" required><br>
-        <lable>Location</lable>
-        <input id="new-location" type="text" required><br>
-        <lable>Image</lable>
-        <input id="new-image" type="text" required><br>
-        <lable>Description</lable>
-        <input id="new-description" type="text" required><br>
-        <lable>Rating</lable>
-        <input id="new-rating" type="text" required><br>
-        <lable>Comments</lable>
-        <input id="new-comment" type="text" required><br>
-        <input type="submit">
-    </form>
+    <div class="footer">
+        <div class="fill-text">
+            <h1>
+                add <br>
+                a <br>
+                Restaurant
+            </h1>
+        </div>
+        <form id="submit-form">
+            <lable>Name</lable><br>
+            <input id="new-bar-name" type="text" required><br>
+            <lable>Location</lable><br>
+            <input id="new-location" type="text" required><br>
+            <lable>Image</lable><br>
+            <input id="new-image" type="text" required><br>
+            <lable>Description</lable><br>
+            <input id="new-description" type="text" required><br>
+            <lable>Rating</lable><br>
+            <select id="new-rating">
+                <option value="5">★★★★★</option>
+                <option value="4">★★★★</option>
+                <option value="3">★★★</option>
+                <option value="2">★★</option>
+                <option value="1">★</option>
+            </select><br>
+            <lable>Comments</lable><br>
+            <input id="new-comment" type="text" required><br>
+            <input type="submit">
+        </form>
+       
+    </div>
     <!-- footer with information -->
+</div>
 </body>
 </html>

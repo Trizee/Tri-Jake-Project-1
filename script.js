@@ -79,6 +79,7 @@ comSubmit.addEventListener('submit',(e)=>{
     e.preventDefault()
     addComment(currentData)
     patch(currentData)
+    comSubmit.reset()
     showComments(currentData.comment[currentData.comment.length - 1])
     featRate.textContent = Math.round(average(currentData.rating)*10) /10
 })
@@ -152,7 +153,7 @@ const findForm = document.querySelector("#submit-form")
 findForm.addEventListener("submit", (e) => {
     e.preventDefault()
     postRest()
-
+    findForm.reset()
 
 
 })
