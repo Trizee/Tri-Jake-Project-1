@@ -147,7 +147,46 @@ function addComment(currentData){
 
 }
 
+// create dubmit function to add restaurants
+const findForm = document.querySelector("#submit-form")
+findForm.addEventListener("submit", (e) => {
+    e.preventDefault()
+    postRest()
 
+
+
+})
+
+function postRest() {
+
+    const newName = document.querySelector("#new-bar-name")
+    const newLocation = document.querySelector("#new-location")
+    const newImage = document.querySelector("#new-image")
+    const newDescription = document.querySelector("#new-description")
+    const newRating = document.querySelector("#new-rating")
+    const newComment = document.querySelector("#new-comment")
+
+    fetch("http://localhost:3000/bars", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+        },
+        body: JSON.stringify({
+
+            name: newName.value,
+            image: newImage.value,
+            location: newLocation.value,
+            description: newDescription.value,
+            rating: [parseInt(newRating.value)],
+            comment: [newComment.value],
+        }),
+    })
+
+        .then(r => r.json())
+        .then(newData => {console.log(newData)
+        renderNav(newData)})
+}
 
 // create dubmit function to add restaurants
 // const findForm = document.querySelector("#submit-form")
