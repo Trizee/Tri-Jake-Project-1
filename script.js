@@ -78,6 +78,7 @@ const comSubmit = document.querySelector('.review-form')
 comSubmit.addEventListener('submit',(e)=>{
     e.preventDefault()
     addComment(currentData)
+    patch(currentData)
     showComments(currentData.comment[currentData.comment.length - 1])
     featRate.textContent = Math.round(average(currentData.rating)*10) /10
 })
@@ -123,7 +124,7 @@ function showComments(data){
 
 // patch data
 function patch(data){
-    fetch(`http://localhost:3000/current-exhibits/1`,{
+    fetch(`http://localhost:3000/bars/${data.id}`,{
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
@@ -144,47 +145,47 @@ function addComment(currentData){
     
     console.log(currentData)
 
-
 }
+
 
 
 // create dubmit function to add restaurants
-const findForm = document.querySelector("#submit-form")
-findForm.addEventListener("submit", (e) => {
-    e.preventDefault()  
-    postRest()
+// const findForm = document.querySelector("#submit-form")
+// findForm.addEventListener("submit", (e) => {
+//     e.preventDefault()  
+//     postRest()
 
 
 
-})
+// })
 
-function postRest(){
+// function postRest(){
 
-    const newName = document.querySelector("#new-bar-name")
-    const newLocation = document.querySelector("#new-location")
-    const newImage = document.querySelector("#new-image")
-    const newDescription = document.querySelector("#new-comments")
+//     const newName = document.querySelector("#new-bar-name")
+//     const newLocation = document.querySelector("#new-location")
+//     const newImage = document.querySelector("#new-image")
+//     const newDescription = document.querySelector("#new-comments")
 
-    fetch("http://localhost:3000/bars", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-            "Accept": "application/json",
-        },
-        body: JSON.stringify({
+//     fetch("http://localhost:3000/bars", {
+//         method: "POST",
+//         headers: {
+//             "Content-Type": "application/json",
+//             "Accept": "application/json",
+//         },
+//         body: JSON.stringify({
 
-            name: newName.value,
-            image: newImage.value,
-            location : newLocation.value,
-            description : newDescription.value,
-            rating : [""],
-            comment : [""],
-        }),
-    })
+//             name: newName.value,
+//             image: newImage.value,
+//             location : newLocation.value,
+//             description : newDescription.value,
+//             rating : [""],
+//             comment : [0],
+//         }),
+//     })
 
-        .then(r => r.json())
-        .then(newData => console.log(newData))
-}
+//         .then(r => r.json())
+//         .then(newData => console.log(newData))
+// }
 
 // create function to take the average star rating 
 // create a patch to update json

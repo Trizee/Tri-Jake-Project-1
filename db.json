@@ -21,11 +21,13 @@
       "image": "https://www.milehighhappyhour.com/wp-content/uploads/2013/12/Jacksons-1000x500.jpg",
       "description": "Best place to grab a seventh inning beer!",
       "rating": [
-        3
+        3,
+        5
       ],
       "comment": [
         "Go there Wednesdays",
-        "Spin the shot wheel!"
+        "Spin the shot wheel!",
+        "this is cool"
       ]
     },
     {
@@ -69,15 +71,6 @@
         "Cool bar, and even cooler people!",
         "This place is right next to my school!"
       ]
-    },
-    {
-      "name": "bar random",
-      "image": "https://t3.ftcdn.net/jpg/03/08/47/58/360_F_308475881_m7o04LTdIbwWWnSJDqjFTjOnWvU0yj8b.jpg",
-      "location": "somewhere",
-      "description": "hello",
-      "rating": [],
-      "comment": [],
-      "id": 6
     }
   ]
 }
