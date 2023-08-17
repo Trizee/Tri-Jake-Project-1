@@ -65,11 +65,19 @@
       "location": "2220 Blake St, Denver, CO 80205",
       "description": "Great place to grab lunch!",
       "rating": [
-        3
+        3,
+        5,
+        5,
+        5,
+        5
       ],
       "comment": [
         "Cool bar, and even cooler people!",
-        "This place is right next to my school!"
+        "This place is right next to my school!",
+        "this is cool",
+        "hello",
+        "Jake is cool",
+        "jhjh"
       ]
     },
     {
@@ -79,13 +87,28 @@
       "description": "nice place",
       "rating": [
         2,
+        5,
         5
       ],
       "comment": [
         "Nice one",
-        "Jake is cool"
+        "Jake is cool",
+        "this is cool"
       ],
       "id": 6
+    },
+    {
+      "name": "bar random",
+      "image": "https://t3.ftcdn.net/jpg/03/08/47/58/360_F_308475881_m7o04LTdIbwWWnSJDqjFTjOnWvU0yj8b.jpg",
+      "location": "somewhere",
+      "description": "nice place",
+      "rating": [
+        5
+      ],
+      "comment": [
+        "Nice one"
+      ],
+      "id": 7
     }
   ]
 }
