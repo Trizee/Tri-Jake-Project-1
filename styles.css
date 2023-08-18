@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster+Two:ital,wght@1,700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Bebas Neue', sans-serif;
+  scrollbar-color: #000;
+  scrollbar-width: 5px;
+}
+
+header {
+  display: inline-block;
+  justify-content: space-evenly;
+  text-align: center;
+  border-bottom: #000 solid;
+  width: 84vw;
+}
+
+body {
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px
+}
+
+ul {
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+li {
+  padding: 10px 20px;
+  font-size: 30px;
+  text-decoration: none;
+  color: #000;
+}
+
+li a {
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  color: #000;
+}
+
+li a:hover {
+  color: #d23433;
+  text-decoration: underline;
+}
+
+.bar-nav {
+  display: none;
+  justify-content: center;
+  overflow: auto;
+  width: 100%;
+  padding: 10px;
+  transition: 300ms;
+}
+
+.bar-nav img {
+  height: 150px;
+  width: 200px;
+  margin: 0.3em;
+  border-radius: 0.5em;
+}
+
+.bar-preview {
+  background-color: #000;
+  border-radius: 10px;
+  color: #fff;
+  margin: 5px;
+}
+
+.hidden-rating {
+  display: none;
+}
+
+.featured {
+  width: 45vw;
+  padding-top: 25px;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.featured img {
+  width: 43vw;
+  border-radius: 10px;
+  border: .5px solid #000;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  width: 85vw;
+  align-content: center;
+  padding: auto;
+  margin: auto;
+  height: 300px;
+}
+
+#comment {
+  width: 41vw;
+  padding-top: 25px;
+  font-size: 1.5rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+  margin: 0;
+  padding: 0;
+  height: 300px;
+}
+
+.review-form {
+  width: 28vw;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: auto;
+  height: 300px;
+  border-radius: 10px;
+  background-color: #1175A8;
+}
+
+.under-featured {
+  display: flex;
+  justify-content: space-between;
+  width: 85vw;
+  align-content: center;
+  padding: auto;
+  margin: auto;
+  height: 400px;
+}
+
+.review-container {
+  width: 55vw;
+  font-size: 1.75rem;
+  height: 300px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin: 0;
+  overflow: auto;
+}
+
+h1 {
+  padding: 25px;
+}
+
+input {
+  width: 90%;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+select {
+  border-radius: 10px;
+  width: 40%;
+}
+
+#comment-input {
+  height: 45%;
+  padding: 10%;
+}
+
+#review-submit {
+  width: 40%;
+  font-size: 1rem;
+}
+
+.comsHeader {
+  padding: auto;
+  margin-bottom: -30px;
+}
+
+#submit-form {
+  width: 55vw;
+  font-size: 1.75rem;
+  height: 300px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin: 0;
+  overflow: auto;
+}

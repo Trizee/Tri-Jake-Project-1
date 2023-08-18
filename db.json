@@ -1,0 +1,100 @@
+{
+  "bars": [
+    {
+      "id": 1,
+      "name": "Mcgregor Square",
+      "location": "1901 Wazee St, Denver, CO 80202",
+      "image": "https://img.mlbstatic.com/mlb-images/image/private/t_16x9/t_w2208/mlb/tbm7vafgrzzfcedot9pp.jpg",
+      "description": "Bring the whole gang there is something for everybody!",
+      "rating": [
+        5
+      ],
+      "comment": [
+        "I love this place!",
+        "It's great!"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Jacksons",
+      "location": "1520 20th St, Denver, CO 80202",
+      "image": "https://www.milehighhappyhour.com/wp-content/uploads/2013/12/Jacksons-1000x500.jpg",
+      "description": "Best place to grab a seventh inning beer!",
+      "rating": [
+        3
+      ],
+      "comment": [
+        "Go there Wednesdays",
+        "Spin the shot wheel!"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "La Diabla",
+      "image": "https://wp-denverite.s3.amazonaws.com/wp-content/uploads/sites/4/2023/03/IMG_7717-1024x683.jpg",
+      "location": "2233 Larimer St, Denver, CO 80205",
+      "description": "Best place to be on Wednesday!",
+      "rating": [
+        3
+      ],
+      "comment": [
+        "Get some margs they're great!",
+        "The curtains are cool!"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "ViewHouse Ballpark",
+      "image": "https://cdn.filestackcontent.com/Zh8pQyRAaALulgIVG5Q2",
+      "location": "2015 Market St, Denver, CO 80205",
+      "description": "Haven't been, but it looks great!",
+      "rating": [
+        4
+      ],
+      "comment": [
+        "Something for everybody to do here!",
+        "When's the next cornhole tournamnet?"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Cherry Cricket",
+      "image": "https://cdn.checkle.com/venuePhotos%2F21890fbd-9336-47a9-a812-50eaa40d06df%2Foriginal_1200x1200.webp",
+      "location": "2220 Blake St, Denver, CO 80205",
+      "description": "Great place to grab lunch!",
+      "rating": [
+        3
+      ],
+      "comment": [
+        "Cool bar, and even cooler people!",
+        "This place is right next to my school!"
+      ]
+    },
+    {
+      "name": "New bar",
+      "image": "https://img.freepik.com/free-photo/cocktails-shaker-arrangement-night-club_23-2149093603.jpg?w=2000",
+      "location": "everywhere",
+      "description": "aHJSVW",
+      "rating": [
+        1
+      ],
+      "comment": [
+        "GREAT"
+      ],
+      "id": 6
+    },
+    {
+      "name": "New bar",
+      "image": "https://img.freepik.com/free-photo/cocktails-shaker-arrangement-night-club_23-2149093603.jpg?w=2000",
+      "location": "everywhere",
+      "description": "aHJSVW",
+      "rating": [
+        1
+      ],
+      "comment": [
+        "GREAT"
+      ],
+      "id": 7
+    }
+  ]
+}

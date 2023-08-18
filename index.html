@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>Bar Reviews</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Tri and Jake Bar Reviews</h1>
+            <!-- Make a nav bar and line it up -->
+            <ul>
+                <li id="barBtn"><a href="#">BARS</a></li>
+                <li><a href="#">COMMENTS</a></li>
+                <li><a href="#">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <nav class="bar-nav">
+        <!-- fill with data from json -->
+    </nav>
+    <h1 id="fname">Restaurant : Example name</h1>
+    <main>
+        <!-- make containers for the restaurants -->
+
+        <div class="featured">
+
+
+            <img id="fimg">
+
+        </div>
+        <!-- make a section for restaurants -->
+        <div id="comment">
+            <h2>Description</h2>
+            <p id="fdes">blah blah blah blah</p>
+            <div id="individual-comment">
+                <!-- make div elements and seperate this to the right side then use css to clean up the page -->
+
+                <h2>Location :</h2>
+                <p id="floc">11223 Blake St <br>Denver Co 80123</p>
+
+                <h2>Average Rating</h2>
+                <p id="frate">★★★☆☆</p>
+
+            </div>
+        </div>
+    </main>
+    <h1 id="comsHeader">COMMENTS</h1>
+    <div class="under-featured">
+        <div class="review-container">
+        </div>
+        <form class="review-form">
+            <label>Comments :</label>
+            <input id="comment-input" type="text" required><br>
+            <select id="star-input">
+                <option value="5">★★★★★</option>
+                <option value="4">★★★★</option>
+                <option value="3">★★★</option>
+                <option value="2">★★</option>
+                <option value="1">★</option>
+            </select>
+            <input id="review-submit" type="submit">
+        </form>
+    </div>
+    <!-- make a form with a submit button -->
+    <form id="submit-form">
+        <lable>Name</lable>
+        <input id="new-bar-name" type="text" required><br>
+        <lable>Location</lable>
+        <input id="new-location" type="text" required><br>
+        <lable>Image</lable>
+        <input id="new-image" type="text" required><br>
+        <lable>Description</lable>
+        <input id="new-description" type="text" required><br>
+        <lable>Rating</lable>
+        <input id="new-rating" type="text" required><br>
+        <lable>Comments</lable>
+        <input id="new-comment" type="text" required><br>
+        <input type="submit">
+    </form>
+
+    <!-- footer with information -->
+</body>
+
+</html>
